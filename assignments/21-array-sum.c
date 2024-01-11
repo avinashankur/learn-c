@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <conio.h>
 
 int main() {
     int n;
+    clrscr();
     printf("Enter number of elements: ");
     scanf("%d", &n);
 
@@ -15,5 +17,6 @@ int main() {
 
     printf("Sum: %d\n", sum);
 
+    getch();
     return 0;
 }
