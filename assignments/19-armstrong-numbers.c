@@ -1,37 +1,27 @@
 #include <stdio.h>
+#include <conio.h>
 #include <math.h>
 
-int countDigits(int num) {
-    int count = 0;
-    while (num != 0) {
-        num /= 10;
-        count++;
-    }
-    return count;
-}
-
-int isArmstrong(int num) {
-    int originalNum = num;
-    int numDigits = countDigits(num);
-    int sum = 0;
-
-    while (num != 0) {
-        int digit = num % 10;
-        sum += pow(digit, numDigits);
-        num /= 10;
-    }
-
-    return (sum == originalNum);
-}
-
 int main() {
-    printf("Armstrong numbers between 1 and 100:\n");
+    int i, sum, num, count = 0;
+    clrscr();
+    printf("Armstrong number between 1 and 100 are:\n");
 
-    for (int i = 1; i <= 200; i++) {
-        if (isArmstrong(i)) {
-            printf("%d\n", i);
+    for (i = 1; i <= 100; i++) {
+        num = i;
+        while (num != 0)
+        {
+            num /= 10;
+            count++;
         }
+        num = i;
+        sum = pow(num % 10, count) + pow((num % 100 - num % 10) / 10, count) + pow((num % 1000 - num % 100) / 100, count);
+        if (sum == i)
+        {
+            printf("%d \n", i);
+        }
+        count = 0;
     }
-
+    getch();
     return 0;
 }
