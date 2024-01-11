@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <conio.h>
 
 int main() {
     int num1, num2;
+    clrscr();
     
     printf("Enter first number: ");
     scanf("%d", &num1);
@@ -13,4 +15,7 @@ int main() {
     } else {
         printf("Not Equal");
     }
+    
+    getch();
+    return 0;
 }

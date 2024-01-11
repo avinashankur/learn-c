@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <conio.h>
 
 int main() {
     int m1, m2, m3, m4, m5;
+    clrscr();
     
     printf("Enter marks for five subjects:\n");
     printf("Subject Maths: ");
@@ -32,5 +34,6 @@ int main() {
     printf("Percentage: %.2f%%\n", percentage);
     printf("Grade: %c\n", grade);
     
+    getch();
     return 0;
 }

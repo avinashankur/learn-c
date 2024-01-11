@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <conio.h>
 
 int calc(int n) {
     int factorial = 1;
@@ -12,6 +13,8 @@ int calc(int n) {
 
 int main() {
     int n, result;
+    clrscr();
+
     printf("Enter the number to find factorial: ");
     scanf("%d", &n);
 
@@ -22,4 +25,7 @@ int main() {
     }
 
     printf("Factorial is: %d", result);
+
+    getch();
+    return 0;
 }

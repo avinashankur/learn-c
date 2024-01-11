@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <conio.h>
 
 int main() {
     int n, first = 0, second = 1, next;
+    clrscr();
 
     printf("Enter the number of terms you want in the Fibonacci series: ");
     scanf("%d", &n);
@@ -20,5 +22,7 @@ int main() {
     }
 
     printf("\n");
+    
+    getch();
     return 0;
 }

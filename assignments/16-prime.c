@@ -1,7 +1,10 @@
 #include <stdio.h>
+#include <conio.h>
 
 int main() {
     int n;
+    clrscr();
+
     printf("Enter the number: ");
     scanf("%d", &n);
 
@@ -20,5 +23,6 @@ int main() {
         printf("Number is not prime\n");
     }
 
+    getch();
     return 0;
 }

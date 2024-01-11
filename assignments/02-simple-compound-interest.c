@@ -1,8 +1,10 @@
 #include <stdio.h>
 #include <math.h>
+#include <conio.h>
 
 int main() {
     double principal, rate, time;
+    clrscr();
     
     printf("Enter the Principal Amount: ");
     scanf("%lf", &principal);
@@ -20,5 +22,6 @@ int main() {
     printf("Simple Interest: %lf\n", simple_interest);
     printf("Compound Interest: %lf\n", compound_interest);
     
+    getch();
     return 0;
 }

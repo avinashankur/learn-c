@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <conio.h>
 #define PI 3.1415926
 
 float myfunc(float r) {  
@@ -15,6 +16,7 @@ return(s);
 
 int main() {
     float radius, circum, area;
+    clrscr();
     float myfunc(float radius);
     printf("Radius: ");
     scanf("%f", &radius);
@@ -22,4 +24,7 @@ int main() {
     area = myfunc1(radius);
     printf("Circumference is %f. \n", circum);
     printf("Area is %f. \n", area);
+
+    getch();
+    return 0;
 }

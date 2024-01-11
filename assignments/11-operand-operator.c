@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include <conio.h>
 
 int main() {
     double operand1, operand2;
     char operator;
+    clrscr();
 
     printf("Enter the first operand: ");
     scanf("%lf", &operand1);
@@ -40,5 +42,6 @@ int main() {
 
     printf("Result: %.2lf\n", result);
 
+    getch();
     return 0;
 }

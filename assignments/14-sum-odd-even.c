@@ -1,9 +1,10 @@
-//WAP to print sum of even and odd numbers from 1 to N numbers.
-
 #include <stdio.h>
+#include <conio.h>
 
 int main() {
     int n, odd = 0, even = 0;
+    clrscr();
+    
     printf("Enter a number: ");
     scanf("%d", &n);
 
@@ -17,4 +18,7 @@ int main() {
 
     printf("Odd sum from 1 to %d: %d\n",n, odd);
     printf("Even sum from 1 to %d: %d\n",n, even);
+
+    getch();
+    return 0;
 }

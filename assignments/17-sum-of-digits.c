@@ -1,9 +1,9 @@
 #include <stdio.h>
+#include <conio.h>
 
 int main() {
-  int num;
-  int sum = 0;
-  int digit;
+  int num, sum = 0, digit;
+  clrscr();
 
   printf("Enter a number: ");
   scanf("%d", &num);
@@ -15,5 +15,7 @@ int main() {
   }
 
   printf("The sum of digits is %d.\n", sum);
+
+  getch();
   return 0;
 }

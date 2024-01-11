@@ -1,8 +1,10 @@
 #include <stdio.h>
+#include <conio.h>
 
 float main() {
     float math, phy, chem, eng, cs;
     float sum, perc;
+    clrscr();
     
     printf("Enter marks in Maths: ");
     scanf("%f", &math);
@@ -24,4 +26,7 @@ float main() {
     
     printf("Total Marks: %0.2f\n", sum);
     printf("Percentage: %0.2f%%", perc );
+
+    getch();
+    return 0;
 }

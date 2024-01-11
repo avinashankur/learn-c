@@ -1,7 +1,9 @@
 #include <stdio.h>
+#include <conio.h>
 
 int main() {
     int num, reversed = 0;
+    clrscr();
 
     printf("Enter a number: ");
     scanf("%d", &num);
@@ -14,5 +16,6 @@ int main() {
 
     printf("Reverse of the number: %d\n", reversed);
 
+    getch();
     return 0;
 }
